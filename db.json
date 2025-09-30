@@ -1,0 +1,142 @@
+{
+  "enderecos": [
+    {
+      "id_endereco": 1,
+      "rua": "Rua das Flores",
+      "numero": "123",
+      "complemento": "Apto 101",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "12345-678"
+    }
+  ],
+  "usuarios": [
+    {
+      "id_usuario": 1,
+      "nome": "João Silva",
+      "email": "joao@exemplo.com",
+      "senha": "senha123",
+      "telefone": "11987654321",
+      "cpf": "12345678901",
+      "perfil": "admin",
+      "status": true,
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "clientes": [
+    {
+      "id_cliente": 1,
+      "nome": "Maria Souza",
+      "cpf": "98765432100",
+      "cnpj": "12345678000195",
+      "tipo_cliente": "juridico",
+      "email": "maria@empresa.com",
+      "telefone": "1122334455",
+      "endereco_id": 1,
+      "data_nascimento": "1985-05-15",
+      "data_cadastro": "2025-09-01",
+      "sexo": "Feminino",
+      "status": true,
+      "created_at": "2025-09-01T10:00:00",
+      "updated_at": "2025-09-01T10:00:00"
+    }
+  ],
+  "controle_contatos_cliente": [
+    {
+      "id_controle": 1,
+      "cliente_id": 1,
+      "usuario_responsavel_id": 1,
+      "data_contato": "2025-09-29T14:00:00",
+      "tipo_contato": "E-mail",
+      "descricao": "Contato para negociação de contrato.",
+      "retorno_agendado": "2025-10-05T10:00:00",
+      "status_contato": "pendente",
+      "created_at": "2025-09-29T14:00:00",
+      "updated_at": "2025-09-29T14:00:00"
+    }
+  ],
+  "fornecedor": [
+    {
+      "id_fornecedor": 1,
+      "razao_social": "Fornecedor Ltda",
+      "nome_fantasia": "Fornecedor",
+      "cnpj": "12345678000195",
+      "email": "contato@fornecedor.com",
+      "telefone": "1122334455",
+      "endereco_id": 1,
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "despesas": [
+    {
+      "id_despesa": 1,
+      "cliente_id": 1,
+      "fornecedor_id": 1,
+      "descricao": "Compra de materiais",
+      "valor": 1500.50,
+      "data_pagamento": "2025-09-30",
+      "forma_pagamento": "Boleto",
+      "status": "pago",
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "controle_banco": [
+    {
+      "id_controle_banco": 1,
+      "banco": "Banco do Brasil",
+      "agencia": "1234",
+      "conta": "56789012345",
+      "tipo_conta": "Corrente",
+      "saldo_inicial": 10000.00,
+      "saldo_atual": 8000.00,
+      "status": true,
+      "titular": "Maria Souza",
+      "cliente_id": 1,
+      "fornecedor_id": 1,
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "controle_cartoes": [
+    {
+      "id_controle_cartao": 1,
+      "banco_id": 1,
+      "numero_cartao": "1234567890123456",
+      "limite_total": 5000.00,
+      "vencimento_fatura": "2025-10-10",
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "controle_contas": [
+    {
+      "id_controle_conta": 1,
+      "banco_id": 1,
+      "tipo": "Água",
+      "descricao": "Conta de Água",
+      "valor": 150.00,
+      "vencimento": "2025-10-05",
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ],
+  "controle_pagamentos": [
+    {
+      "id_controle_pagamento": 1,
+      "conta_id": 1,
+      "banco_id": 1,
+      "cartao_id": 1,
+      "data_pagamento": "2025-09-30",
+      "valor_pago": 150.00,
+      "forma_pagamento": "Cartão de Crédito",
+      "observacoes": "Pagamento realizado no cartão.",
+      "status": "pago",
+      "created_at": "2025-09-30T12:00:00",
+      "updated_at": "2025-09-30T12:00:00"
+    }
+  ]
+}
